@@ -1,0 +1,227 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage{setspace}
+\usepackage{gensymb}
+
+\singlespacing
+
+
+\usepackage[cmex10]{amsmath}
+
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+
+\usepackage{longtable}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{tkz-euclide}
+\usepackage{float}
+
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+
+\DeclareMathOperator*{\Res}{Res}
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+\begin{document}
+
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+\providecommand{\abs}[1]{\lvert#1\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\lVert#1\rVert}
+%\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+\providecommand{\mean}[1]{E[ #1 ]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\cosec}{\,\text{cosec}\,}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\newcommand{\mydet}[1]{\ensuremath{\begin{vmatrix}#1\end{vmatrix}}}
+\numberwithin{equation}{subsection}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\let\StandardTheFigure\thefigure
+\let\vec\mathbf
+\renewcommand{\thefigure}{\theproblem}
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+     \def\rightbox#1{\makebox[0in][r]{#1}}
+     \def\centbox#1{\makebox[0in]{#1}}
+     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\vspace{3cm}
+\title{ASSIGNMENT-6}
+\author{Unnati Gupta}
+\maketitle
+\newpage
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+Download all python codes from 
+\begin{lstlisting}
+https://github.com/unnatigupta2320/Assignment_8/blob/master/codes
+\end{lstlisting}
+%
+and latex-tikz codes from 
+%
+\begin{lstlisting}
+https://github.com/unnatigupta2320/Assignment_8
+\end{lstlisting}
+%
+\section{Question No-2.22}
+Give the magnitude and direction of the net force acting on a stone of mass 0.1 kg.
+\begin{enumerate}[label=\alph*.)]
+    \item Just after it is dropped from the window of a stationary train.
+    \item Just after it is dropped from the window of a train running at a constant velocity of 36 km/h.
+    \item Just after it is dropped from the window of a train accelerating with $1 ms^{-2}$
+    \item Lying on the floor of a train which is accelerating with $1ms^{-2}$, the stone being at rest relative to the train.
+\end{enumerate}
+%
+\section{Solution}
+Given that:
+\begin{align}
+   \text{mass of stone, }m=0.1 kg
+\end{align}
+\begin{enumerate}[label=\alph*.)]
+\item Here, the stone is just dropped from window of stationary train. 
+\begin{itemize}
+    \item So acceleration $\vec{a}$ will be equal to acceleration due to gravity $\vec{g}$.
+\begin{align}
+&\therefore \vec{a} =\vec{g}=10 ms^{-2} 
+\\
+&\implies \text{Net force, }\vec{F}=m\vec{a}
+\\
+&\implies \vec{F}=0.1\times10 \text{ N}
+\\
+&\implies \vec{F}=1\text{ N}
+\end{align}
+\item This force $\vec{F}$ will be \textbf{acting vertically downwards}.
+\end{itemize}
+\item Here velocity of train is constant.
+\begin{align}
+\therefore \text{acceleration, } \vec{a} =0.    
+\end{align}
+\begin{itemize}
+\item No force acts on the stone due to motion of train.
+\item The force $\vec{F}$ acting on stone will be weight of stone.
+\begin{align}
+&\therefore \vec{F} =\text{weight of stone }
+\\
+&\implies \vec{F}=m\vec{g}
+\\
+&\implies \vec{F}=0.1\times10 \text{ N}
+\\
+&\implies \vec{F}=1\text{ N}
+\end{align}
+\item This force $\vec{F}$ will also be \textbf{acting vertically downwards}.
+\end{itemize}
+\item When the train is accelerating with $1 ms^{-2}$ an additional force $\vec{F'}$ will be acting on stone where,
+\begin{align}
+ \vec{F'}&=m\vec{a}
+ \\
+ \vec{F'}&=0.1\times1\text{ N}
+ \\
+ \vec{F'}&=0.1\text{ N}
+\end{align}
+\begin{itemize}
+\item This $\vec{F'}$ will be acting in the horizontal direction.But once the stone is dropped from the train, $\vec{F'}$ becomes zero.
+\item Now,the force $\vec{F}$ acting on stone will be weight of stone.
+\begin{align}
+&\therefore \vec{F} =\text{weight of stone }
+\\
+&\implies \vec{F}=m\vec{g}
+\\
+&\implies \vec{F}=0.1\times10 \text{ N}
+\\
+&\implies \vec{F}=1\text{ N}
+\end{align}
+\item This force $\vec{F}$ will also be \textbf{acting vertically downwards}.
+\end{itemize}
+\item As the stone is lying on the floor of the train,its acceleration is the same as that of the train. 
+\begin{itemize}
+    \item So it's acceleration $\vec{a} = 1 ms^{-2}$.
+\begin{align}
+&\implies \text{Net force, }\vec{F}=m\vec{a}
+\\
+&\implies \vec{F}=0.1\times1 \text{ N}
+\\
+&\implies \vec{F}=0.1\text{ N}
+\end{align}
+\item This force is \textbf{along the horizontal direction of motion of the train}.
+\end{itemize}
+\end{enumerate}
+\end{document}
